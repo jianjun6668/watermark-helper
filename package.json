@@ -1,0 +1,35 @@
+{
+  "name": "watermark-helper",
+  "version": "1.0.0",
+  "description": "A helper class for adding watermarks to images",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "cross-env-shell open test/test.html",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "watermark",
+    "image",
+    "helper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianjun6668/watermark-helper.git"
+  },
+  "author": "wangjianjun2019@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jianjun6668/watermark-helper/issues"
+  },
+  "homepage": "https://github.com/jianjun6668/watermark-helper#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.17.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.4.5"
+  }
+}

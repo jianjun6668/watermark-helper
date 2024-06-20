@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>水印测试</title>
+  </head>
+  <body>
+    <img class="container" src="" alt="" />
+  </body>
+  <script type="module">
+    import WatermarkHelper from "../dist/index.js";
+
+    (async () => {
+      const watermarkHelper = new WatermarkHelper();
+      const result = await watermarkHelper.watermarkGenerator({
+        source: {
+          url: "https://avatars.githubusercontent.com/u/24822623?s=400&u=de09970f52a3917ee07f63d117c92516725ac3dd&v=4",
+        },
+        watermark: {
+          text: "这是水印",
+        },
+      });
+      const img = document.querySelector(".container");
+      img.src = result;
+      console.log(result);
+    })();
+  </script>
+</html>
